@@ -1,0 +1,639 @@
+@import url("https://fonts.cdnfonts.com/css/poppins");
+@import url("https://fonts.cdnfonts.com/css/avenir");
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+font-family: 'Avenir', 'poppins';
+background: white;
+}
+
+header img{
+  width: 3rem;
+  height: 3rem;
+}
+
+
+.container-one{
+  background-image: url(./images/boma.jpg);
+  background-size: cover; 
+  background-repeat: no-repeat; 
+
+}
+
+header {
+  color: white;
+  padding: 10px;
+ 
+}
+h4 {
+  margin: 0; 
+}
+
+.bar{
+  list-style: none;
+  gap: 1rem;
+  display: flex;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  justify-content: flex-end;
+ }
+
+.bar a { text-decoration: none;
+color: white; 
+padding: 10px;
+}
+
+.bar a:hover{
+  color: rgb(191, 39, 39);
+}
+nav{
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.hamburger{
+  cursor: pointer;
+  position: fixed;
+  top: 30px;
+  right: 20px;
+  width: 28px;
+  visibility: hidden;
+  opacity: 0;
+  height: 25px;
+  z-index: 1;
+  display: flex;
+  justify-content: flex-start;
+}
+
+
+.toggle{
+  cursor: pointer;
+  position: fixed;
+  top: 30px;
+  right: 20px;
+  width: 28px;
+  opacity: 0;
+  height: 25px;
+  z-index: 1;}
+
+
+ 
+.message-button {
+  display: inline-block;
+  padding: 8px 15px; 
+  font-size: 16px; 
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  margin-bottom: 4rem;
+  border: 1px solid red;
+  border-radius: 20px; 
+  background-color: #d52c2c; 
+  color: #ffffff; 
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; 
+
+}
+
+.message-button:hover {
+  background-color: #910e0e; 
+  border-color: #a04545; 
+  color: #ffffff; 
+}
+
+
+.container-p{
+  display: flex;
+  align-items: right;
+  justify-content: flex-start;
+  font-size: 30px;
+  font-weight: 300;
+  color: white;
+  padding: 2rem;
+}
+.come-button { 
+  font-size: 16px; 
+  padding: 20px 30px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid red;
+  border-radius: 20px; 
+  background-color:  #d52c2c; 
+  color: white; 
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; 
+
+}
+
+.come-butn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+ 
+
+.come-button:hover {
+  background-color: #910e0e; 
+  border-color: #a04545; 
+  color: #ffffff; 
+}
+
+.social-media{
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 3rem;
+gap: 0.6rem;
+
+}
+
+.social-media img{
+  width: 3rem;
+  height: 4rem;
+  gap: 1rem;
+}
+
+.container-two{
+  background-color: rgb(249, 249, 249);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.container-two h3{
+  color: red;
+  font-size: 1.6rem;
+}
+.container-two h2{
+  color: rgb(59, 59, 72);
+  font-size: 3.3rem;
+  font-weight: 500;
+  padding-bottom: 2rem;
+}
+
+.sermon{
+  background-image: url(./images/boma.jpg);
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  padding: 2rem;
+  border-radius: 10px;
+  
+}
+
+.saved{
+  background-color: rgb(210, 49, 49);
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  padding: 2rem;
+  border-radius: 10px;
+  
+}
+
+.follow{
+  background-image: url(./images/boma.jpg);
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  padding: 2rem;
+  border-radius: 10px;
+  
+}
+
+
+.sermon-save{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 3rem;
+  
+}
+
+.video{
+  padding: 3rem;
+  background-color: rgb(247, 247, 247);
+}
+
+.sermon h6{
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.sermon p{
+  color: white;
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 2rem;
+}
+
+.sermon,.saved,.follow{
+  width: 50%;
+  height: 50%
+}
+.see{
+  font-size: 16px; 
+  padding: 10px 20px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 2rem;
+  border: 1px solid red;
+  border-radius: 20px; 
+  background-color:  #d52c2c; 
+  color: white; 
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; 
+
+
+}
+
+.see:hover {
+background-color: #910e0e; 
+border-color: #a04545; 
+color: #ffffff; 
+}
+
+.saved h6{
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.saved p{
+  color: white;
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 2rem;
+}
+
+.learn{
+    font-size: 16px; 
+    padding: 10px 20px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 2rem;
+    border: 1px solid white;
+    border-radius: 20px; 
+    background-color: transparent; 
+    color: white; 
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; 
+  
+  
+}
+
+.learn:hover {
+  background-color: #910e0e; 
+  border-color: #a04545; 
+  color: #ffffff; 
+}
+
+.follow h6{
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.follow p{
+  color: white;
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 2rem;
+}
+
+.container-three img{
+  width: 50%;
+  height: 100%;
+  border-radius: 20%;
+}
+
+.container-three{
+  display: flex;
+  gap: 2rem;
+  padding: 4rem;
+  
+}
+
+.about{
+  display: flex;
+  flex-direction : column;
+}
+
+.about h4{
+  color: #d52c2c;
+  padding-top: 2rem;
+  text-align: left;
+}
+
+.about h3{
+  color: rgb(26, 13, 81);
+  font-size: 3rem;
+  font-weight: 900;
+  padding-bottom: 1rem;
+}
+
+.about p{
+  color:rgb(26, 13, 81) ;
+  font-size: 1rem;
+  padding-bottom: 1rem;
+}
+
+.general{
+ background-color: white;
+}
+
+.about-general{
+  display: flex;
+  padding: 2rem;
+  gap: 3rem;
+}
+
+.oversee{
+  display: flex;
+  flex-direction : column;
+  background-color: white;
+  border-radius: 30px;
+  padding: 1rem;
+  width: 50%;
+  height: 50%;
+ 
+}
+
+.oversee h1{
+  color: rgb(26, 13, 81) ;
+  padding-top: 2rem;
+  text-align: left;
+}
+
+.oversee h5{
+  color: rgb(26, 13, 81);
+  font-size: 2rem;
+  font-weight: 300;
+  padding-bottom: 1rem;
+}
+
+
+.contact{
+  font-size: 16px; 
+  padding: 10px 20px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 2rem;
+  border: 1px solid red;
+  border-radius: 20px; 
+  background-color:  #d52c2c; 
+  color: white; 
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; 
+
+
+}
+
+.contact:hover {
+background-color: #910e0e; 
+border-color: #a04545; 
+color: #ffffff; 
+}
+
+.circle-image{
+  height: 50%;
+  width: 50%;
+  border-radius: 10%;
+  background:linear-gradient(rgb(97, 71, 71), rgb(29, 29, 43));
+}
+
+.general h3{
+color: #d52c2c;
+text-align: center;
+padding-top: 2rem;
+font-size: 2rem;
+}
+
+.general h2{
+ color:rgb(34, 19, 55) ;
+ text-align: center;
+ font-size: 2rem;
+  }
+
+.photo h2{
+  text-align: center;
+  padding: 2rem;
+  font-size: 3rem;
+  font-weight: 900;
+  color:rgb(26, 13, 81) ;
+}
+
+.scrolling-images{  
+  padding: 2rem;
+  width: 100%;
+  height: 20rem;
+  animation-name: scrollingimage;
+  animation-duration: 7s;
+  animation-delay: 8s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes scrollingimage{
+  0%{
+    background-image: url(images/prayers.jpg);
+  }
+  25%{
+    background-image: url(images/church-photo.jpg);
+  }
+  50%{
+    background-image: url(images/IMG-9271.JPG);
+  }
+  75%{
+    background-image: url(images/prayers.jpg);
+  }
+  100%{
+    background-image: url(images/jesusc.jpg);
+  }
+}
+
+.change-the{
+  background-color: #1f2546;
+  padding: 2rem;
+}
+
+.change-the h4{
+  color: white;
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.lets p{
+  color: white;
+  font-size: 1.9;
+  overflow-wrap: normal;
+  
+}
+.lets{
+  display: flex;
+  gap: 15rem;
+}
+.join-us{
+  padding-top: 2rem;
+}
+
+
+.visit{
+  font-size: 16px; 
+  padding: 10px 20px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 1rem;
+  border: 1px solid red;
+  border-radius: 20px; 
+  background-color:  #d52c2c; 
+  color: white; 
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; 
+
+
+}
+
+.visit:hover {
+background-color: #910e0e; 
+border-color: #a04545; 
+color: #ffffff; 
+}
+
+.general-footer{
+  display: flex;
+  background-color: rgb(33, 30, 30);
+  gap: 8rem;
+  padding: 2rem;
+}
+
+.general-footer h4{
+  color: white;
+  font-size: 1.7rem;
+  font-weight: 900;
+  padding-bottom: 2rem;
+}
+.general-footer p{
+  color: white;
+  font-size: 1rem;
+  font-weight: 200;
+}
+
+
+.location{
+  display: flex;
+  gap: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+.call-y{
+  display: flex;
+  gap: 1.5rem;
+  padding-top: 2rem;
+}
+
+
+
+.footer-img{
+  width: 4rem;
+  height: 3rem;
+  gap: 2rem;
+  flex-direction: column;
+
+}
+
+.bar-two{
+  list-style: none;
+  gap: 2rem;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+
+ }
+
+.bar-two a { text-decoration: none;
+color: white; 
+padding: 10px;
+}
+
+.bar-two a:hover{
+  color: rgb(191, 39, 39);
+}
+nav{
+  padding: 1rem;
+  gap: 2rem;
+}
+
+.last{
+  text-align: center;
+  color: white;
+  background-color: rgb(33,30,30) ;
+}
+
+@media (max-width:700px){
+  body{ width: 100%;}
+
+  .bar{display: flex;background: hsl(335, 71%, 69%);
+    position: fixed;
+    top: 40px;
+    right: 70px;
+    width: 40%;
+    padding: 20px;
+    text-align: center;
+    visibility: hidden;
+    flex-direction: column;
+  }
+  
+  .hamburger{
+      cursor: pointer;
+      position: fixed;
+      top: 30px;
+      right: 20px;
+      width: 28px;
+      visibility: visible;
+      opacity: 1;
+      height: 25px;
+      z-index: 1;}
+  
+  .toggle{
+          cursor: pointer;
+          position: fixed;
+          top: 30px;
+          right: 20px;
+          width: 28px;
+          opacity: 0;
+          height: 25px;
+          z-index: 2;}
+  
+  .toggle:checked+.bar {
+              visibility: visible;
+              opacity: 1;
+            }
+
+            .sermon-save{
+              display: flex;
+              flex-direction: column;
+            }
+          }
